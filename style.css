@@ -1,0 +1,105 @@
+#board div {
+  background-color: black;
+  border: 1px solid rgba(255, 0, 0, 0.315);
+  box-sizing: border-box;
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+
+#board {
+  width: calc(26 * 24px);
+  margin: auto;
+}
+
+#board .snake {
+  background-color: rgb(1, 255, 1);
+}
+
+img {
+  width: 40%;
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #4a72ad;
+}
+
+.enter {
+  height: 52px;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #fece00;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#board .apple {
+  background-image: url(./dboc16e-6486966f-c438-41f4-bce5-52dcb56934b0.png);
+  background-size: cover;
+}
+
+.start {
+  padding: 8px 249px;
+  background-color: #fece00;
+  color: black;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+}
+
+.highscores {
+  width: 300px;
+  height: 406px;
+  background-color: gainsboro;
+  border-radius: 15px;
+  margin-left: 20px;
+  border: 10px solid rgba(255, 0, 0, 0.315);
+}
+
+p {
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  list-style-type:none;
+}
+
+input[type=text], select {
+  width: 22%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 22px;
+  margin-left: 654px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
