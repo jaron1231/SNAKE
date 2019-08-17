@@ -32,6 +32,7 @@ function initGame() {
 }
 
 function start() {
+  document.querySelector("body").addEventListener("keydown", enterKey);
   startGame();
   gameLoop();
 }
@@ -82,7 +83,7 @@ function gameLoop() {
     snakeX >= boardWidth ||
     snakeY >= boardHeight
   ) {
-    initGame();
+    return;
   }
   // Collect apples
   if (board[snakeY][snakeX].apple === 1) {
@@ -92,7 +93,7 @@ function gameLoop() {
   }
   // Tail collision
   if (board[snakeY][snakeX].snake > 0) {
-    initGame();
+    return;
   }
 
   // Update the board at the new snake position
@@ -143,7 +144,7 @@ function enterKey(event) {
       }
       break;
     default:
-      // document.querySelector("input").value += event.key;
+      document.querySelector("input").value += event.key;
       break;
   }
 
@@ -160,7 +161,6 @@ function placeApple() {
 }
 
 function setHighscore() {
-  document.querySelector("body").addEventListener("keyup", enterKey);
   document.querySelector(".sannie").innerText = document.querySelector(
     "#fname"
   ).value;
